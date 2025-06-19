@@ -1,6 +1,8 @@
 # Instalación y carga de paquetes necesarios
 ## Para leer archivos Excel
 if(!require(readxl)) install.packages("readxl")
+## Para hacer las pruebas de hipotesis
+if (!require(BSDA)) install.packages("BSDA")
 
 # Importar datos ejercicio 2
 ejercicio2 <- read_excel("HT.xlsx", sheet = 1)
